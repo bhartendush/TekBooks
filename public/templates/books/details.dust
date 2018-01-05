@@ -1,0 +1,24 @@
+{>"layouts/master" /}
+
+{<body}
+  <div class="col-md-4">
+    <img src="/img/{book.cover}" alt="" style="width:100%" />
+  </div>
+  <div class="col-md-8">
+  <h2>{book.title}</h2>
+    <ul>
+      <li>Category: {book.category}</li>
+      <li>Author: {book.author}</li>
+      <li>Publisher: {book.publisher}</li>
+    </ul>
+    <br />
+    <div class="price"><span>${book.price}</span></div>
+
+    <p>{book.description}</p>
+    <a href="#">add to cart</a>
+  </div>
+{/body}
+
+
+
+

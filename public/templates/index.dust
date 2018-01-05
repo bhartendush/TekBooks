@@ -1,0 +1,21 @@
+{>"layouts/master" /}
+
+{<body}
+<div class="container">
+   <div class="row">
+   {#books}
+     <div class="col-md-4">
+       <img src="../img/{.cover}" alt="" style="width:100%;"/>
+       <h4>{.title}</h4>
+       <p>{.truncText}</p>
+       <div class="price">${.price}</div>
+       <br />
+       <a href="/books/details/{._id}" classbtn btn-primary>Book Details</a>
+     </div>
+    {/books}
+   </div>
+</div>
+
+    
+{/body}
+
